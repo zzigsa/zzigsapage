@@ -25,6 +25,8 @@
         <link rel="stylesheet" href="{% static 'css/skel.css' %}" />
         <link rel="stylesheet" href="{% static 'css/style.css' %}" />
         <link rel="stylesheet" href="{% static 'css/style-xlarge.css' %}" />
+        <link rel="stylesheet" href="{% static 'css/Login-Form-Clean.css' %}" />
+
     </noscript>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -62,8 +64,51 @@
     </div>
 
     <!-- Two -->
-    <div id="bestphoto" class="bestphoto" style="text-align: center;">
-        등록 툴
+    <div id="enroll" class="enroll">
+
+        <div class="login-clean">
+            <form method="post">
+                <h2 class="sr-only">Login Form</h2>
+                <div class="illustration"><i class="icon ion-ios-navigate"></i></div>
+                <div class="form-group" style="height: 85px;">
+                    <p>프로필 사진</p>
+                    <input type="file" />
+                </div>
+
+
+                <div class="form-group" style="height: 85px;">
+                    <p>촬영 사진</p>
+                    <input type="file" />
+                </div>
+
+                <div class="form-group" style="height: 85px;">
+                    <p>장비 목록</p>
+                    <input class="form-control" type="text" name="eqip" placeholder="가지고 있는 장비 서술" />
+                </div>
+
+                <div class="form-group" style="height: 85px;">
+                    <p>장비 사진</p>
+                    <input type="file" />
+                </div>
+
+
+                <div class="form-group" style="height: 85px;">
+                    <p>SNS 주소(선택)</p>
+                    <input class="form-control" type="url" name="SNS_URL" placeholder="SNS 주소" />
+                </div>
+
+                <div class="form-group" style="height: 200px;">
+                    <p>자기소개</p>
+                    <textarea class="form-control" style="height: 150px;"></textarea>
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-primary btn-block" type=" submit">
+                        등록 요청
+                    </button>
+                </div>
+            </form>
+        </div>
+
     </div>
 
 

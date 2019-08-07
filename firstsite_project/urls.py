@@ -27,4 +27,5 @@ urlpatterns = [
     path('recommend/',firstapp.views.recommend,name="recommend"),
     path('enroll/',firstapp.views.enroll,name="enroll"),
     path('login/',firstapp.views.login,name="login"),
+    path('join/',firstapp.views.join,name="join"),
     ]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
