@@ -26,3 +26,15 @@ def login(request):
     
 def join(request):
     return render(request,'join.html')
+
+def mypage(request):
+    return render(request,'mypage.html')
+
+def photographer(request):
+    return render(request,'photographer.html')
+
+def product(request):
+    return render(request,'product.html')
+
+def upload(request):
+    return render(request,'upload.html')

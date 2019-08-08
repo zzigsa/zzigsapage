@@ -52,9 +52,14 @@
                 <li><a href="{% url 'recommend' %}">추천여행지</a></li>
                 <li><a href="{% url 'enroll' %}">작가 등록하기</a></li>
                 <li><a href="{% url 'login' %}">로그인/가입</a></li>
+                <li><a href="{% url 'mypage' %}">마이페이지</a></li>
+                <li><a href="{% url 'photographer' %}">작가페이지</a></li>
+                <li><a href="{% url 'upload' %}">상품등록</a></li>
+                <li><a href="{% url 'product' %}">상품페이지</a></li>
             </ul>
         </nav>
     </header>
+
 
     <div class="inner">
         <div style="color: #ffffff; margin:5em 0;">
@@ -67,7 +72,25 @@
                 <input type="text" class="form-control" id="email" placeholder="검색어를 입력해주세요" name="email" required="">
                 <button type="submit" class="btn btn-default">검색</button>
             </form>
+
+            <div class="filter">
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+                    <label class="custom-control-label" for="customRadioInline1">최신순</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+                    <label class="custom-control-label" for="customRadioInline2">가격순</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="customRadioInline3" name="customRadioInline1" class="custom-control-input">
+                    <label class="custom-control-label" for="customRadioInline3">평점순</label>
+                </div>
+            </div>
+
+
         </div>
+
     </div>
 
 

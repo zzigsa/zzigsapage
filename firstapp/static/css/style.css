@@ -1252,3 +1252,20 @@ a.btn.btn-course {
 	margin: 3em 20%;
 
 }
+
+
+.filter {
+	text-align: center;
+	padding: 10px;
+	margin: 0% 10%;
+
+}
+
+
+.personphoto {
+	width: 100px;
+	height: 100px;
+	object-fit: cover;
+	object-position: top;
+	border-radius: 50%;
+}

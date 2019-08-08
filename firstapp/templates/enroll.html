@@ -25,8 +25,6 @@
         <link rel="stylesheet" href="{% static 'css/skel.css' %}" />
         <link rel="stylesheet" href="{% static 'css/style.css' %}" />
         <link rel="stylesheet" href="{% static 'css/style-xlarge.css' %}" />
-        <link rel="stylesheet" href="{% static 'css/Login-Form-Clean.css' %}" />
-
     </noscript>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -54,6 +52,10 @@
                 <li><a href="{% url 'recommend' %}">추천여행지</a></li>
                 <li><a href="{% url 'enroll' %}">작가 등록하기</a></li>
                 <li><a href="{% url 'login' %}">로그인/가입</a></li>
+                <li><a href="{% url 'mypage' %}">마이페이지</a></li>
+                <li><a href="{% url 'photographer' %}">작가페이지</a></li>
+                <li><a href="{% url 'upload' %}">상품등록</a></li>
+                <li><a href="{% url 'product' %}">상품페이지</a></li>
             </ul>
         </nav>
     </header>
@@ -68,8 +70,7 @@
 
         <div class="login-clean">
             <form method="post">
-                <h2 class="sr-only">Login Form</h2>
-                <div class="illustration"><i class="icon ion-ios-navigate"></i></div>
+
                 <div class="form-group" style="height: 85px;">
                     <p>프로필 사진</p>
                     <input type="file" />
