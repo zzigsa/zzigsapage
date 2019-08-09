@@ -97,11 +97,14 @@
 					<section>
 						<img class="personphoto" height="40%" width="40%" src="{% static 'images/pic01.jpg' %}" alt="">
 						<span style="font-size : 2em; margin-left:1em;">000작가</span>
-
-						<div style="text-align: right"><a href="#" class="button alt">좋아요</a></div>
-
+						<div style="text-align: end;"><a style=" margin-right:1em;" href="#"
+								class="icon fa-instagram">Instagram</a>
+							<span style="text-align: right"><a href="#" class="button alt">좋아요</a></span>
+						</div>
 					</section>
 					<hr />
+					<div style="text-align: right"><a href="{% url 'photographeredit' %}" class="button alt">프로필 수정</a>
+					</div>
 
 				</div>
 			</div>

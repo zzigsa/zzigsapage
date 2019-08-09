@@ -55,3 +55,12 @@ def mymodify(request):
     
 def bye(request):
     return render(request,'bye.html')
+
+     
+def productedit(request):
+    return render(request,'productedit.html')
+
+def photographeredit(request):
+    return render(request,'photographeredit.html')
+
+    

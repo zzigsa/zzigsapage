@@ -36,4 +36,6 @@ urlpatterns = [
     path('mypage/favorite',firstapp.views.favorite,name="favorite"),
     path('mypage/mymodify',firstapp.views.mymodify,name="mymodify"),
     path('mypage/bye',firstapp.views.bye,name="bye"),
+    path('productedit',firstapp.views.productedit,name="productedit"),
+    path('photographeredit',firstapp.views.photographeredit,name="photographeredit"),
     ]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

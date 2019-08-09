@@ -60,50 +60,61 @@
         </nav>
     </header>
 
-    <!-- Banner -->
-    <section id="banner">
-        <div class="inner">
-            <h2>인생샷 찍어줄 사진작가 찾기</h2>
-            <form class="banner-form" method="post" action="#">
-                <select name="option">
-                    <option value="place">지역</option>
-                    <option value="photographer">작가</option>
-                    <option value="hash">해시태그</option>
-                </select>
-                <input type="text" class="form-control" id="email" placeholder="검색어를 입력해주세요" name="email" required="">
-                <button type="submit" class="btn btn-default">검색</button>
-            </form>
-        </div>
-    </section>
 
+    <div style="margin-top: 4em;">
+        <h1 style="text-align: center; font-size : 4em;">상품수정</h1>
+    </div>
 
     <!-- Two -->
-    <section id="one" class="wrapper style1">
-        <header class="major">
-        </header>
-        <div class="container">
-            <div class="row">
-                <div class="6u">
-                    <section class="special">
-                        <a href="#" class="image fit"><img src="{% static 'images/pic01.jpg' %}" alt="" /></a>
-                        <h2>이달의 사진</h2>
-                        <ul class="actions">
-                            <li><a href="#" class="button alt">자세히 보기</a></li>
-                        </ul>
-                    </section>
+    <div id="enroll" class="enroll">
+
+        <div class="login-clean">
+            <form method="post">
+
+                <div class="form-group" style="height: 85px;">
+                    <p>상품 타이틀</p>
+                    <input class="form-control" type="text" name="eqip" placeholder="가지고 있는 장비 서술" />
                 </div>
-                <div class="6u">
-                    <section class="special">
-                        <a href="#" class="image fit"><img src="{% static 'images/pic02.jpg' %}" alt="" /></a>
-                        <h2>추천 여행지</h2>
-                        <ul class="actions">
-                            <li><a href="#" class="button alt">자세히 보기</a></li>
-                        </ul>
-                    </section>
+
+                <div class="form-group" style="height: 85px;">
+                    <p>상품 요약</p>
+                    <input class="form-control" type="text" name="eqip" placeholder="가지고 있는 장비 서술" />
                 </div>
-            </div>
+
+
+                <div class="form-group" style="height: 85px;">
+                    <p>샘플 사진</p>
+                    <input type="file" />
+                </div>
+
+                <div class="form-group" style="height: 200px;">
+                    <p>상세 설명</p>
+                    <textarea class="form-control" style="height: 150px;"></textarea>
+                </div>
+
+                <button>옵션항목추가</button>
+                <button>옵션항목제거</button>
+
+                <div class="form-row">
+                    <div class="form-group col-md-9">
+                        <input type="text" class="form-control" placeholder="옵션 내용">
+                    </div>
+                    <div class="form-group col-md-3">
+                        <input type="text" class="form-control" placeholder="옵션가격">
+                    </div>
+                </div>
+
+
+                <button class="btn btn-primary btn-block" type=" submit">
+                    수정하기
+                </button>
+
+
+            </form>
         </div>
-    </section>
+
+    </div>
+
 
     <!-- Footer -->
     <footer id="footer">
