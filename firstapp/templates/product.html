@@ -67,7 +67,7 @@
 				<li><a href="{% url 'recommend' %}">추천여행지</a></li>
 				<li><a href="{% url 'enroll' %}">작가 등록하기</a></li>
 				<li><a href="{% url 'login' %}">로그인/가입</a></li>
-				<li><a href="{% url 'mypage' %}">마이페이지</a></li>
+				<li><a href="{% url 'reservation' %}">마이페이지</a></li>
 				<li><a href="{% url 'photographer' %}">작가페이지</a></li>
 				<li><a href="{% url 'upload' %}">상품등록</a></li>
 				<li><a href="{% url 'product' %}">상품페이지</a></li>
@@ -169,7 +169,8 @@
 						<div class="form-group">
 							<form id="reserve">
 								<h3>옵션</h3>
-								<select name="option">
+
+								<select class="productoption" name="option">
 									<option value="option1">옵션1</option>
 									<option value="option2">옵션2</option>
 									<option value="option3">옵션3</option>
@@ -180,42 +181,18 @@
 
 								<h3>시간:</h3>
 								<p><input type="text" placeholder="원하는 시간대 입력"></p>
-
-								<div><input type="submit" value="예약신청"></div>
+								<div style="text-align: end">
+									<input type="submit" class="btn btn-dark" value="예약신청"></<input>
+								</div>
+								<a href="">작가와 상담</a>
 							</form>
+
 						</div>
 					</section>
 				</div>
 			</div>
 			<hr class="major" />
-			<div class="row">
-				<div class="6u">
-					<section class="special">
-						<a href="#" class="image fit"><img src="images/pic01.jpg" alt="" /></a>
-						<h3>Mollis adipiscing nisl</h3>
-						<p>Eget mi ac magna cep lobortis faucibus accumsan enim lacinia adipiscing metus urna adipiscing
-							cep commodo id. Ac quis arcu amet. Arcu nascetur lorem adipiscing non faucibus odio nullam
-							arcu lobortis. Aliquet ante feugiat. Turpis aliquet ac posuere volutpat lorem arcu aliquam
-							lorem.</p>
-						<ul class="actions">
-							<li><a href="#" class="button alt">Learn More</a></li>
-						</ul>
-					</section>
-				</div>
-				<div class="6u">
-					<section class="special">
-						<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
-						<h3>Neque ornare adipiscing</h3>
-						<p>Eget mi ac magna cep lobortis faucibus accumsan enim lacinia adipiscing metus urna adipiscing
-							cep commodo id. Ac quis arcu amet. Arcu nascetur lorem adipiscing non faucibus odio nullam
-							arcu lobortis. Aliquet ante feugiat. Turpis aliquet ac posuere volutpat lorem arcu aliquam
-							lorem.</p>
-						<ul class="actions">
-							<li><a href="#" class="button alt">Learn More</a></li>
-						</ul>
-					</section>
-				</div>
-			</div>
+			<div style="width: 60em; height: 30em; border:medium solid #000000;"> 댓글</div>
 		</div>
 	</section>
 

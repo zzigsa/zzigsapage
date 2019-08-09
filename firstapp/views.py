@@ -27,9 +27,6 @@ def login(request):
 def join(request):
     return render(request,'join.html')
 
-def mypage(request):
-    return render(request,'mypage.html')
-
 def photographer(request):
     return render(request,'photographer.html')
 
@@ -38,3 +35,23 @@ def product(request):
 
 def upload(request):
     return render(request,'upload.html')
+
+    
+def reservation(request):
+    return render(request,'reservation.html')
+
+    
+def history(request):
+    return render(request,'history.html')
+
+    
+def favorite(request):
+    return render(request,'favorite.html')
+
+    
+def mymodify(request):
+    return render(request,'mymodify.html')
+
+    
+def bye(request):
+    return render(request,'bye.html')
