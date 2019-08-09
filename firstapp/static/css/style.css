@@ -1223,9 +1223,9 @@ a.btn.btn-course {
 }
 
 .bestphoto {
-	padding: 30em 5em;
+	padding: 0em 5em;
 	margin: 5em;
-	border: medium solid #000000;
+
 }
 
 .login {
